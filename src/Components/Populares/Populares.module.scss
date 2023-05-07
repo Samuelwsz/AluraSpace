@@ -1,0 +1,39 @@
+@import "@/styles/variaveis";
+
+.populares {
+  display: block;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  height: 800px;
+  color: $roxo;
+  font-family: $fonte-normal;
+  font-size: 16px;
+
+  h2 {
+    margin-top: 5.3rem;
+  }
+
+  &__imagens {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 77%;
+    padding: 0;
+    list-style: none;
+
+    img {
+      width: 150px;
+      height: 100px;
+    }
+  }
+}
+
+@media screen and (min-width: 400px) and (max-width: 750px) {
+  .populares {
+    visibility: hidden;
+  }
+  body {
+    overflow-x: hidden;
+  }
+}
